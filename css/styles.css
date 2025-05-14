@@ -1,0 +1,350 @@
+ /* general stuff */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+ }
+ 
+ 
+ *,
+ *:before,
+ *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ html,
+ body {
+    height: 100%;
+ }
+ 
+ 
+ body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: black;
+ }
+
+ .mouse:hover {
+  cursor: pointer;
+ }
+
+ /* text-decor section */
+
+ .intro-text p {
+   text-align: center;
+   font-family: "Rubik Glitch", system-ui;
+   font-size: xx-large;
+   margin-top: 50px;
+   color: white;
+ }
+
+ /* text-specific transitions */
+
+ @keyframes dialogue-fade {
+   0% {  visibility: visible;
+      opacity: 0;}
+   100% {visibility: visible;
+      opacity: 100;}
+ }
+
+ #first-line {
+   animation: dialogue-fade 2s linear;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+   visibility: hidden;
+ }
+
+ #second-line {
+   animation: dialogue-fade 2s linear;
+   animation-delay: 4s;
+   animation-fill-mode: forwards;
+   visibility: hidden;
+ }
+
+ #third-line {
+   animation: dialogue-fade 2s linear;
+   animation-delay: 7s;
+   animation-fill-mode: forwards;
+   visibility: hidden;
+ }
+
+ #fourth-line {
+   animation: dialogue-fade 2s linear;
+   animation-delay: 10s;
+   animation-fill-mode: forwards;
+   visibility: hidden;
+ }
+
+ #fifth-line {
+   animation: dialogue-fade 2s linear;
+   animation-delay: 13s;
+   animation-fill-mode: forwards;
+   visibility: hidden;
+ }
+
+ #sixth-line {
+   animation: dialogue-fade 2s linear;
+   animation-delay: 16s;
+   animation-fill-mode: forwards;
+   visibility: hidden;
+ }
+
+ .go-next-button {
+   animation: dialogue-fade 2s linear;
+   animation-delay: 19s;
+   animation-fill-mode: forwards;
+   visibility: hidden;
+ }
+
+ /* button decor */
+ 
+.go-next-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+}
+
+button {
+   background: black;
+   color: white;
+   font-family: "Rubik Glitch", system-ui;
+   border-width: thin;
+   padding: 5px 10px;
+}
+
+/* STORY PAGE CONTENT */
+
+.class-fade {
+  animation: div-fade 4s linear;
+}
+
+.disappear {
+  animation: disappear-ani 1s linear;
+}
+
+@keyframes div-fade {
+  0% {
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 100;
+  }
+}
+
+@keyframes disappear-ani {
+  0% {
+    opacity: 100;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+.dialogue {
+ color: white;
+ margin-left: 50px;
+}
+
+/* FIRST STORY SEQUENCE */
+
+#story-time-1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation-fill-mode: forwards;
+  left: 50px;
+}
+
+#story-time-2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation-fill-mode: forwards;
+  right: 10px;
+  top: 110px;
+  opacity: 0;
+}
+
+#story-time-3 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation-fill-mode: forwards;
+  left: 50px;
+  bottom: 200px;
+  opacity: 0;
+}
+
+#story-time-4 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation-fill-mode: forwards;
+  right: 50px;
+  bottom: 50px;
+  opacity: 0;
+}
+
+#question-1 {
+  display: block;
+  text-align: center;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 400px;
+  right: 600px;
+  color: white;
+  opacity: 0;
+  font-size: 50px;
+}
+
+#response1 {
+  display: block;
+  text-align: center;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 600px;
+  right: 200px;
+  color: white;
+  opacity: 0;
+}
+
+#go-next-button2 {
+  position: absolute;
+  animation-fill-mode: forwards;
+  right: 100px;
+  bottom: 50px;
+  opacity: 0;
+}
+
+
+/* SECOND STORY SEQUENCE */
+
+#story-time-5 {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  animation-fill-mode: forwards;
+  left: 50px;
+}
+
+#story-time-6 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  animation-fill-mode: forwards;
+  left: 50px;
+  top: 340px;
+  opacity: 0;
+}
+
+#story-time-7 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation-fill-mode: forwards;
+  left: 50px;
+  bottom: 10px;
+  opacity: 0;
+}
+
+#story-time-8 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  animation-fill-mode: forwards;
+  left: 1000px;
+  top: 150px;
+  opacity: 0;
+}
+
+#question-2 {
+  display: block;
+  text-align: center;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: white;
+  opacity: 0;
+  font-size: 50px;
+}
+
+#response2 {
+  display: inline-block;
+  text-align: center;
+  animation-fill-mode: forwards;
+  position: absolute;
+  color: white;
+  right: 184px;
+  top: 250px;
+  opacity: 0;
+}
+
+#go-next-button3 {
+  position: absolute;
+  animation-fill-mode: forwards;
+  right: 100px;
+  bottom: 50px;
+  opacity: 0;
+}
+
+/* THIRD STORY SEQUENCE */
+
+#story-time-9 {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  animation-fill-mode: forwards;
+  left: 50px;
+}
+
+#story-time-10 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  animation-fill-mode: forwards;
+  left: 50px;
+  top: 340px;
+  opacity: 0;
+}
+
+#story-time-11 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation-fill-mode: forwards;
+  left: 50px;
+  bottom: 10px;
+  opacity: 0;
+}
+
+#story-time-12 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  animation-fill-mode: forwards;
+  left: 1000px;
+  top: 150px;
+  opacity: 0;
+}
